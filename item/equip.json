@@ -1,0 +1,235 @@
+[
+  {
+    "name":  "Hazard Shield",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/suit_visor/hazard.png",
+    "codes": "hazard,shield,hazardshield"
+  },
+
+  {
+    "name": "Boost Ball",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/morph/boostball.png",
+    "codes": "boost,boostball,aloneboost"
+  },
+  {
+    "name": "Spider Ball",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/morph/spider.png",
+    "codes": "spider,spiderball,alonespider"
+  },
+  {
+    "name": "Morph Ball Bombs",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/morph/bomb.png",
+    "codes": "bomb,alonebomb"
+  },
+  {
+    "name": "Morph Ball",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/morph/morph.png",
+    "codes": "morph,morphball,alonemorph"
+  },
+  {
+    "name": "Spider/Boost Ball",
+    "type": "composite_toggle",
+    "item_left": "boost",
+    "item_right": "spider",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/Morph/morph.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/Morph/boostball.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/Morph/spider.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/Morph/boostspider.png"
+      },
+    ],
+    "codes": "spiderboost"
+  },
+  {
+    "name": "Bombs on Spider/Boost Ball",
+    "type": "toggle_badged",
+    "loop": true,
+    "img": "images/Morph/bombbbadge.png",
+    "base_item": "spiderboost",
+    "codes": "bombspiderboost,sb,bomb"
+  },
+  {
+    "name": "Morph Spider/Boost Ball",
+    "type": "toggle_badged",
+    "loop": true,
+    "disabled_img": "images/Morph/shadow.png",
+    "disabled_img_mods": "",
+    "img": "images/Morph/empty_90.png",
+    "base_item": "spiderboost",
+    "codes": "morphspiderboost,msb,morph"
+  },
+  {
+    "name": "Bombs on Morph Spider/Boost Ball",
+    "type": "toggle_badged",
+    "loop": true,
+    "img": "images/Morph/bombbbadge.png",
+    "base_item": "morphspiderboost",
+    "codes": "morphbombspiderboost,mbsb,bmsb,morph"
+  },
+
+  {
+    "name": "Space Jump Boots",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/suit_visor/spacejump.png",
+    "codes": "spacejump,spacejumpboots,space"
+  },
+
+  {
+    "name": "Screw Attack",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/suit_visor/screwattack.png",
+    "codes": "screwattack,screw"
+  },
+
+
+  {
+    "name": "Progressive Beam"",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/weapon/plasma.png",
+        "codes": "plasma,progressivebeam"
+      },
+      {
+        "img": "images/weapon/nova.png",
+        "codes": "nova"
+      }
+    ]
+  },
+  {
+    "name": "Charge Beam"
+  },
+  {
+    "name": "Plasma Beam"
+  },
+  {
+    "name": "Nova Beam"
+  },
+  {
+    "name": "Plasma/Nova Beam"
+  },
+  {
+    "name": "Charge Beam on Progressive Beam"
+  },
+  {
+    "name": "Charge Beam on Plasma/Nova Beam"
+  },
+
+  {
+    "name": "Missile Launcher"
+  },
+  {
+    "name": "Progressive Missiles"
+  },
+  {
+    "name": "Seeker Missiles"
+  },
+  {
+    "name": "Ice Missiles"
+  },
+  {
+    "name": "Ice/Seeker Missiles"
+  },
+
+  {
+    "name": "Ship Missile Launcher"
+  },
+  {
+    "name": "Ship Grapple Beam"
+  },
+  {
+    "name": "Ship Missile Launcher/Grapple Beam"
+  },
+
+
+  {
+    "name": "X-Ray Visor",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/suit_visor/xray.png",
+    "codes": "xray"
+  },
+  {
+    "name": "Command Visor",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/suit_visor/command.png",
+    "codes": "command"
+  },
+  {
+    "name": "Command/X-Ray Visor"
+  },
+  {
+    "name": "Scan Visor",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/suit_visor/scan.png",
+    "codes": "scan"
+  },
+
+  {
+    "name": "Grapple Lasso"
+  },
+  {
+    "name": "Grapple Swing"
+  },
+  {
+    "name": "Grapple Voltage"
+  },
+
+
+  {
+    "name": "Hypermode"
+  },
+  {
+    "name": "Hypermissile"
+  },
+  {
+    "name": "Hyperball"
+  },
+  {
+    "name": "Hypergrapple"
+  },
+
+
+  {
+    "name": "Missile Expansion"
+  },
+  {
+    "name": "Ship Missile Expansion"
+  },
+
+  {
+    "name": "Energy Tanks"
+  },
+  {
+    "name": "Energy Cells"
+  }
+]

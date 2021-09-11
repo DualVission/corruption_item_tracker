@@ -1,0 +1,14 @@
+{
+  "name": "MP3CR Item Tracker",
+  "game_name": "Metroid Prime 3: Corruption Randomizer",
+  "game_variant": "yes",
+  "package_version": "1.0.0.0",
+  "required_app_version": "2.3.9.0",
+  "package_uid": "dual_mp3cr",
+  "author": "DualVission",
+  "variants": {
+    "current": {
+      "display_name": "Item Tracker"
+    }
+  }
+}
