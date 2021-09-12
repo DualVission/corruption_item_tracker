@@ -5,11 +5,11 @@
     "v_alignment": "center",
     "item_size": 64,
     "rows": [
-      [ "hazard",    "boostspider",   "space", "screw"   ],
-      [ "buster",   "xray",      "grapple"  ],
-      [ "spreader", "morph",     "space"    ],
-      [ "flame",    "bomb",      "suiticon" ],
-      [ "missile",  "powerbomb", "etank"    ]
+      [ "space",           "screw",        "spiderboost",        "hazard"       ],
+      [ "progressivebeam", "missile",      "progressivemissile", "shipacc"      ],
+      [ "cmxr",            "lasso",        "swing",              "voltage"      ],
+      [ "hyperbeam",       "hypermissile", "hyperball",          "hypergrapple" ],
+      [ "mx",              "sx",           "ex",                 "cx"           ]
     ]
   }
 }

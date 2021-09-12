@@ -36,7 +36,7 @@
     "codes": "morph,morphball,alonemorph"
   },
   {
-    "name": "Spider/Boost Ball",
+    "name": "Boost/Spider Ball",
     "type": "composite_toggle",
     "item_left": "boost",
     "item_right": "spider",
@@ -44,29 +44,29 @@
       {
         "left": false,
         "right": false,
-        "img": "images/Morph/morph.png",
+        "img": "images/morph/morph.png",
         "img_mods": "@disabled"
       },
       {
         "left": true,
         "right": false,
-        "img": "images/Morph/boostball.png"
+        "img": "images/morph/boostball.png"
       },
       {
         "left": false,
         "right": true,
-        "img": "images/Morph/spider.png"
+        "img": "images/morph/spider.png"
       },
       {
         "left": true,
         "right": true,
-        "img": "images/Morph/boostspider.png"
+        "img": "images/morph/boostspider.png"
       },
     ],
     "codes": "spiderboost"
   },
   {
-    "name": "Bombs on Spider/Boost Ball",
+    "name": "Bombs on Boost/Spider Ball",
     "type": "toggle_badged",
     "loop": true,
     "img": "images/Morph/bombbbadge.png",
@@ -74,7 +74,7 @@
     "codes": "bombspiderboost,sb,bomb"
   },
   {
-    "name": "Morph Spider/Boost Ball",
+    "name": "Morph Boost/Spider Ball",
     "type": "toggle_badged",
     "loop": true,
     "disabled_img": "images/Morph/shadow.png",
@@ -84,7 +84,7 @@
     "codes": "morphspiderboost,msb,morph"
   },
   {
-    "name": "Bombs on Morph Spider/Boost Ball",
+    "name": "Bombs on Morph Boost/Spider Ball",
     "type": "toggle_badged",
     "loop": true,
     "img": "images/Morph/bombbbadge.png",
@@ -110,12 +110,20 @@
 
 
   {
-    "name": "Progressive Beam"",
+    "name": "Progressive Beam",
     "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop":  true,
     "stages": [
       {
+        "img": "images/weapon/power.png",
+        "img_mods": "@disabled",
+        "codes": "progressivebeam"
+      },
+      {
         "img": "images/weapon/plasma.png",
-        "codes": "plasma,progressivebeam"
+        "codes": "plasma"
       },
       {
         "img": "images/weapon/nova.png",
@@ -124,48 +132,190 @@
     ]
   },
   {
-    "name": "Charge Beam"
+    "name": "Charge Beam",
+    "type":  "toggle",
+    "loop":  true,
+    "img": "images/weapon/charge.png",
+    "codes": "charge,chargealone"
   },
   {
-    "name": "Plasma Beam"
+    "name": "Plasma Beam",
+    "type":  "toggle",
+    "loop":  true,
+    "img": "images/weapon/plasma.png",
+    "codes": "plasma,plasmaalone"
   },
   {
-    "name": "Nova Beam"
+    "name": "Nova Beam",
+    "type":  "toggle",
+    "loop":  true,
+    "img": "images/weapon/nova.png",
+    "codes": "nova,novaalone"
   },
   {
-    "name": "Plasma/Nova Beam"
+    "name": "Plasma/Nova Beam",
+    "type": "composite_toggle",
+    "item_left": "plasmaalone",
+    "item_right": "novaalone",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/weapon/power.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/weapon/plasma.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/weapon/nova.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/weapon/novaplasma.png"
+      },
+    ],
+    "codes": "plasmanova"
   },
   {
-    "name": "Charge Beam on Progressive Beam"
+    "name": "Charge Beam on Progressive Beam",
+    "type": "toggle_badged",
+    "loop": true,
+    "img": "images/weapon/chargebbadge.png",
+    "base_item": "progressivebeam",
+    "codes": "chargeprogressivebeam,charge,cpb"
   },
   {
-    "name": "Charge Beam on Plasma/Nova Beam"
+    "name": "Charge Beam on Plasma/Nova Beam",
+    "type": "toggle_badged",
+    "loop": true,
+    "img": "images/weapon/chargebbadge.png",
+    "base_item": "plasmanova",
+    "codes": "chargeplasmanova,charge,cpn"
   },
 
   {
-    "name": "Missile Launcher"
+    "name": "Missile Launcher",
+    "type":  "toggle",
+    "loop":  true,
+    "img": "images/weapon/missile.png",
+    "codes": "missile,missilelauncher"
   },
   {
-    "name": "Progressive Missiles"
+    "name": "Progressive Missiles",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/weapon/missile.png",
+        "img_mods": "overlay|images/weapon/ice_ast.png,@disabled",
+        "codes": "progressivemissile"
+      },
+      {
+        "img": "images/weapon/ice.png",
+        "img_mods": "overlay|images/weapon/ice_ast.png",
+        "codes": "ice,icemissile"
+      },
+      {
+        "img": "images/weapon/seeker.png",
+        "codes": "seeker"
+      }
+    ]
   },
   {
-    "name": "Seeker Missiles"
+    "name": "Seeker Missiles",
+    "type":  "toggle",
+    "loop":  true,
+    "img": "images/weapon/seeker.png",
+    "codes": "seeker,seekeralone"
   },
   {
-    "name": "Ice Missiles"
+    "name": "Ice Missiles",
+    "type":  "toggle",
+    "loop":  true,
+    "img": "images/weapon/ice.png",
+    "codes": "ice,icemissile,icealone"
   },
   {
-    "name": "Ice/Seeker Missiles"
+    "name": "Ice/Seeker Missiles",
+    "type": "composite_toggle",
+    "item_left": "icealone",
+    "item_right": "seekeralone",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/weapon/missile.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/weapon/ice.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/weapon/seeker.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/weapon/seekerice.png"
+      },
+    ],
+    "codes": "iceseeker,seekerice"
   },
 
   {
-    "name": "Ship Missile Launcher"
+    "name": "Ship Missile Launcher",
+    "type":  "toggle",
+    "loop":  true,
+    "img": "images/ship/missile.png",
+    "codes": "shipmissile"
   },
   {
-    "name": "Ship Grapple Beam"
+    "name": "Ship Grapple Beam",
+    "type":  "toggle",
+    "loop":  true,
+    "img": "images/ship/grapple.png",
+    "codes": "shipgrapple"
   },
   {
-    "name": "Ship Missile Launcher/Grapple Beam"
+    "name": "Ship Missile Launcher/Grapple Beam",
+    "type": "composite_toggle",
+    "item_left": "shipmissile",
+    "item_right": "shipgrapple",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/ship/neither.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/ship/missile.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/ship/grapple.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/ship/both.png"
+      },
+    ],
+    "codes": "shipacc"
   },
 
 
@@ -184,7 +334,34 @@
     "codes": "command"
   },
   {
-    "name": "Command/X-Ray Visor"
+    "name": "Command/X-Ray Visor",
+    "type": "composite_toggle",
+    "item_left": "command",
+    "item_right": "xray",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/suit_visor/combat.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/suit_visor/command.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/suit_visor/xray.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/suit_visor/command_xray.png"
+      },
+    ],
+    "codes": "commandxray,cmxr"
   },
   {
     "name": "Scan Visor",
@@ -195,41 +372,87 @@
   },
 
   {
-    "name": "Grapple Lasso"
+    "name": "Grapple Lasso",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/grapple/lasso.png",
+    "codes": "lasso,grapple"
   },
   {
-    "name": "Grapple Swing"
+    "name": "Grapple Swing",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/grapple/swing.png",
+    "codes": "swing,grapple"
   },
   {
-    "name": "Grapple Voltage"
-  },
-
-
-  {
-    "name": "Hypermode"
-  },
-  {
-    "name": "Hypermissile"
-  },
-  {
-    "name": "Hyperball"
-  },
-  {
-    "name": "Hypergrapple"
+    "name": "Grapple Voltage",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/grapple/voltage.png",
+    "codes": "voltage,grapple"
   },
 
 
   {
-    "name": "Missile Expansion"
+    "name": "Hyperbeam",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/hyper/beam.png",
+    "codes": "hyperbeam,hm,hypermode"
   },
   {
-    "name": "Ship Missile Expansion"
+    "name": "Hypermissile",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/hyper/missile.png",
+    "codes": "hypermissile,hm,hypermode"
+  },
+  {
+    "name": "Hyperball",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/hyper/ball.png",
+    "codes": "hyperball,hypermorph,hm,hypermode"
+  },
+  {
+    "name": "Hypergrapple",
+    "type":  "toggle",
+    "loop":  true,
+    "img":   "images/hyper/grapple.png",
+    "codes": "hypergrapple,hm,hypermode"
+  },
+
+
+  {
+    "name": "Missile Expansion",
+    "type": "consumable",
+    "img": "images/exp/missile.png",
+    "max_quantity": 255,
+	  "increment": 5,
+    "codes": "missileexp,mx"
+  },
+  {
+    "name": "Ship Missile Expansion",
+    "type": "consumable",
+    "img": "images/exp/ship.png",
+    "max_quantity": 255,
+	  "increment": 5,
+    "codes": "shipexp,sx"
   },
 
   {
-    "name": "Energy Tanks"
+    "name": "Energy Tanks",
+    "type": "consumable",
+    "img": "images/exp/etank.png",
+    "max_quantity": 14,
+    "codes": "etank,energytank,tank,ex"
   },
   {
-    "name": "Energy Cells"
+    "name": "Energy Cells",
+    "type": "consumable",
+    "img": "images/exp/cell.png",
+    "max_quantity": 9,
+    "codes": "ecell,energycell,cell,cx"
   }
 ]
