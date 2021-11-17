@@ -15,7 +15,14 @@
       "uid": "dual_mp3cr",
       "variants": [
         {
-          "name": "Item Tracker",
+          "name": "Tall Item Tracker",
+          "flags":
+          [
+            "chathud"
+          ]
+        },
+        {
+          "name": "Wide Item Tracker",
           "flags":
           [
             "chathud"

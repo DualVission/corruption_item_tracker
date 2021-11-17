@@ -5,20 +5,8 @@
     "margin": "0,0",
     "content": [
       {
-        "type": "array",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "layout",
-            "key": "shared_item_grid"
-          },
-          {
-            "type": "layout",
-            "key": "artifacts",
-            "margin": "0,0,0,10"
-          }
-        ]
+        "type": "layout",
+        "key": "compressed_item_grid"
       }
     ]
   }

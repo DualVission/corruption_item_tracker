@@ -1,10 +1,6 @@
 {
   "tracker_default": {
     "type": "layout",
-    "key": "shared_item_grid"
-  },
-  "tracker_horizontal": {
-    "type": "layout",
-    "key": "shared_item_grid"
+    "key": "item_grid"
   }
 }

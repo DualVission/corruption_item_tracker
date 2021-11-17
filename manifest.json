@@ -7,8 +7,17 @@
   "package_uid": "dual_mp3cr",
   "author": "DualVission",
   "variants": {
-    "current": {
-      "display_name": "Item Tracker"
+    "tall": {
+      "display_name": "Tall Item Tracker"
+    },
+    "wide": {
+      "display_name": "Wide Item Tracker"
+    },
+    "tallX": {
+      "display_name": "Tall Item Tracker with Wide Broadcast"
+    },
+    "wideX": {
+      "display_name": "Wide Item Tracker with Tall Broadcast"
     }
   }
 }

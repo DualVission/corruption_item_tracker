@@ -21,7 +21,7 @@ echo .
   (if exist %%a (
     (echo %%a located.)
     (del %%a 2>NUL)
-    ("C:\Program Files\7-Zip\7z.exe" a %%a %currentDir%/ xr!*.git xr!*.bat xr!*.pdn xr!*_uncompressed* xr!.git*)
+    ("C:\Program Files\7-Zip\7z.exe" a %%a %currentDir%/ x!*.git x!*.bat x!*.pdn x!*_uncompressed* x!.git*)
     (echo %%a replaced.)
   ) else (
     (set /a runfail=runfail+1)
@@ -35,7 +35,7 @@ echo .
 echo .
 if %runfail% GEQ %itemlist% (
   (del %udo% 2>NUL)
-  ("C:\Program Files\7-Zip\7z.exe" a %udo% %currentDir%/ xr!*.git xr!*.bat xr!*.pdn xr!*_uncompressed* xr!.git*)
+  ("C:\Program Files\7-Zip\7z.exe" a %%a %currentDir%/ x!*.git x!*.bat x!*.pdn x!*_uncompressed* x!.git*)
 ) else (
   echo .
 )

@@ -1,0 +1,14 @@
+{
+  "compressed_item_grid": {
+    "type": "itemgrid",
+    "item_margin": "3,3",
+    "v_alignment": "center",
+    "item_size": 90,
+    "rows": [
+      [ "pirate", "cmxr",    "cprogbeam", "hyperbeam",     "sx" ],
+      [ "hazard", "shipacc", "lpm",       "hypermissile",  "mx" ],
+      [ "space",  "screw",   "mbsb",      "hyperball",     "ex" ],
+      [ "lasso",  "swing",   "voltage",   "hypergrapple" , "cx" ]
+    ]
+  }
+}

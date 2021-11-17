@@ -1,0 +1,14 @@
+{
+  "item_grid": {
+    "type": "itemgrid",
+    "item_margin": "3,3",
+    "v_alignment": "center",
+    "item_size": 90,
+    "rows": [
+      [ "pirate", "shipmissile", "command",    "alonecharge", "progressivebeam", "hyperbeam",    "sx" ],
+      [ "hazard", "shipgrapple", "xray",       "tpm",         "missile",         "hypermissile", "mx" ],
+      [ "space",  "alonemorph",  "aloneboost", "alonespider", "alonebomb",       "hyperball",    "ex" ],
+      [ "screw",  "corruption",  "lasso",      "swing",       "voltage",         "hypergrapple", "cx" ],
+    ]
+  }
+}

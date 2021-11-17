@@ -1,3 +1,4 @@
 {
-    "disabled_image_filter": "brightness|0.7,grayscale"
+    "disabled_image_filter": "dim",
+    "allow_resize": false
 }

@@ -44,8 +44,7 @@
       {
         "left": false,
         "right": false,
-        "img": "images/morph/morph.png",
-        "img_mods": "@disabled"
+        "img": "images/morph/morph.png"
       },
       {
         "left": true,
@@ -69,17 +68,18 @@
     "name": "Bombs on Boost/Spider Ball",
     "type": "toggle_badged",
     "loop": true,
-    "img": "images/Morph/bombbbadge.png",
+    "img": "images/morph/bombbadge.png",
     "base_item": "spiderboost",
     "codes": "bombspiderboost,sb,bomb"
   },
   {
     "name": "Morph Boost/Spider Ball",
     "type": "toggle_badged",
+    "swap_actions": true,
     "loop": true,
-    "disabled_img": "images/Morph/shadow.png",
+    "disabled_img": "images/morph/shadow.png",
     "disabled_img_mods": "",
-    "img": "images/Morph/empty_90.png",
+    "img": "images/empty/empty_90.png",
     "base_item": "spiderboost",
     "codes": "morphspiderboost,msb,morph"
   },
@@ -87,9 +87,9 @@
     "name": "Bombs on Morph Boost/Spider Ball",
     "type": "toggle_badged",
     "loop": true,
-    "img": "images/Morph/bombbbadge.png",
+    "img": "images/morph/bombbadge.png",
     "base_item": "morphspiderboost",
-    "codes": "morphbombspiderboost,mbsb,bmsb,morph"
+    "codes": "morphbombspiderboost,mbsb,bmsb,bomb"
   },
 
   {
@@ -135,8 +135,10 @@
     "name": "Charge Beam",
     "type":  "toggle",
     "loop":  true,
+    "disabled_img": "images/weapon/charge_off.png",
+    "disabled_img_mods": "@disabled",
     "img": "images/weapon/charge.png",
-    "codes": "charge,chargealone"
+    "codes": "charge,alonecharge"
   },
   {
     "name": "Plasma Beam",
@@ -186,9 +188,9 @@
     "name": "Charge Beam on Progressive Beam",
     "type": "toggle_badged",
     "loop": true,
-    "img": "images/weapon/chargebbadge.png",
+    "img": "images/weapon/chargebadge.png",
     "base_item": "progressivebeam",
-    "codes": "chargeprogressivebeam,charge,cpb"
+    "codes": "chargeprogressivebeam,charge,cpb,cprogbeam"
   },
   {
     "name": "Charge Beam on Plasma/Nova Beam",
@@ -204,22 +206,21 @@
     "type":  "toggle",
     "loop":  true,
     "img": "images/weapon/missile.png",
-    "codes": "missile,missilelauncher"
+    "codes": "missile,missilelauncher,alonemissile"
   },
   {
     "name": "Progressive Missiles",
     "type": "progressive",
+    "loop": true,
     "initial_stage_idx": 0,
     "allow_disabled": false,
     "stages": [
       {
         "img": "images/weapon/missile.png",
-        "img_mods": "overlay|images/weapon/ice_ast.png,@disabled",
         "codes": "progressivemissile"
       },
       {
         "img": "images/weapon/ice.png",
-        "img_mods": "overlay|images/weapon/ice_ast.png",
         "codes": "ice,icemissile"
       },
       {
@@ -251,8 +252,7 @@
       {
         "left": false,
         "right": false,
-        "img": "images/weapon/missile.png",
-        "img_mods": "@disabled"
+        "img": "images/weapon/missile.png"
       },
       {
         "left": true,
@@ -271,6 +271,71 @@
       },
     ],
     "codes": "iceseeker,seekerice"
+  },
+  {
+    "name": "Missile Launcher on Progressive Missiles",
+    "type": "progressive",
+    "loop": true,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/weapon/missile.png",
+        "img_mods": "@disabled",
+        "codes": "lpm"
+      },
+      {
+        "img": "images/weapon/missile.png",
+        "codes": "lpm1"
+      },
+      {
+        "img": "images/weapon/ice.png",
+        "img_mods": "@disabled",
+        "codes": "lpm2"
+      },
+      {
+        "img": "images/weapon/ice.png",
+        "codes": "lpm3"
+      },
+      {
+        "img": "images/weapon/seeker.png",
+        "img_mods": "@disabled",
+        "codes": "lpm4"
+      },
+      {
+        "img": "images/weapon/seeker.png",
+        "codes": "lpm5"
+      }
+    ]
+  },
+  {
+    "name": "Missile Launcher on Ice/Seeker Missiles",
+    "type": "toggle_badged",
+    "loop": true,
+    "disabled_img": "images/weapon/shadow.png",
+    "img": "images/empty/empty_256.png",
+    "base_item": "iceseeker",
+    "codes": "launchericeseeker,lis,lsi"
+  },
+  {
+    "name": "Tracker Progressive Missile",
+    "type": "toggle_badged",
+    "loop": true,
+    "disabled_img": "images/weapon/ice_ast.png",
+    "disabled_img_mods": "",
+    "img": "images/weapon/ice_ast.png",
+    "base_item": "progressivemissile",
+    "codes": "tpm"
+  },
+  {
+    "name": "Tracker Ice/Seeker Missiles",
+    "type": "toggle_badged",
+    "loop": true,
+    "disabled_img": "images/weapon/ice_ast.png",
+    "disabled_img_mods": "",
+    "img": "images/weapon/ice_ast.png",
+    "base_item": "iceseeker",
+    "codes": "tis,tsi"
   },
 
   {
@@ -399,6 +464,7 @@
     "type":  "toggle",
     "loop":  true,
     "img":   "images/hyper/beam.png",
+    "disabled_img_mods": "@disabled,saturation|0.5|blue",
     "codes": "hyperbeam,hm,hypermode"
   },
   {
@@ -406,6 +472,7 @@
     "type":  "toggle",
     "loop":  true,
     "img":   "images/hyper/missile.png",
+    "disabled_img_mods": "@disabled,saturation|0.5|blue",
     "codes": "hypermissile,hm,hypermode"
   },
   {
@@ -413,6 +480,7 @@
     "type":  "toggle",
     "loop":  true,
     "img":   "images/hyper/ball.png",
+    "disabled_img_mods": "@disabled,saturation|0.5|blue",
     "codes": "hyperball,hypermorph,hm,hypermode"
   },
   {
@@ -420,6 +488,7 @@
     "type":  "toggle",
     "loop":  true,
     "img":   "images/hyper/grapple.png",
+    "disabled_img_mods": "@disabled,saturation|0.5|blue",
     "codes": "hypergrapple,hm,hypermode"
   },
 
@@ -436,8 +505,8 @@
     "name": "Ship Missile Expansion",
     "type": "consumable",
     "img": "images/exp/ship.png",
-    "max_quantity": 255,
-	  "increment": 5,
+    "max_quantity": 11,
+	  "increment": 1,
     "codes": "shipexp,sx"
   },
 
